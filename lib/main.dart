@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: ConversorDeMoedasUi(),
+    home: Home(),
   ));
 }
 
@@ -70,6 +70,7 @@ class _HomeState extends State<Home> {
                   ),
                   color: Colors.deepPurple,
                   onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ConversorDeMoedasUi()));
                   },
                 ),
               ),

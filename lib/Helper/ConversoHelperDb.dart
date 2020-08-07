@@ -4,11 +4,15 @@ import 'package:path/path.dart';
 
 final String conversoes = "conversoes";
 final String id = "id";
+final String nomeMoedaParaConversao = "nomeMoedaParaConversao";
+final String nomeMoedaConvertida = "nomeMoedaConvertida";
 final String valorParaConversao = "valorParaConversao";
 final String valorConvertido = "valorConvertido";
 
 class ConversorHelper {
   Database _db;
+
+  ConversorHelper();
 
   Future<Database> get db async {
     if (_db != null) {
@@ -20,12 +24,13 @@ class ConversorHelper {
 
   Future<Database> initDb() async {
     final dataBasePath = await getDatabasesPath();
-    final path = join(dataBasePath, "contacts.db");
+    final path = join(dataBasePath, "moedas.db");
 
     return await openDatabase(path, version: 1,
         onCreate: (Database db, int newerVersion) async {
       await db.execute(
-          "CREATE TABLE $conversoes($id INTEGER PRIMARY KEY, $valorParaConversao TEXT, $valorConvertido TEXT)");
+          "CREATE TABLE $conversoes($id INTEGER PRIMARY KEY, $valorParaConversao TEXT,"
+              " $valorConvertido TEXT)");
     });
   }
 

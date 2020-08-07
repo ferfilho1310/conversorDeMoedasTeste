@@ -13,4 +13,5 @@ Está faltando a implementação do banco de dados SQflite e a da tela históric
 
 <strong> Imagens da aplicação </strong>
 
-
+<img src=https://user-images.githubusercontent.com/37080995/89597613-fcd3f300-d830-11ea-8d49-bd65308553ce.jpg>
+<img src= https://user-images.githubusercontent.com/37080995/89597618-fe052000-d830-11ea-8a24-16dcb3353ae5.jpg>

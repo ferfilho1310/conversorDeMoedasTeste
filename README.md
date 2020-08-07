@@ -1,16 +1,16 @@
-# conversordemoedasapp
+<strong> Sobre </strong>
 
-A new Flutter application.
+Este aplicativo faz a conversão de moedas de Euro pra dolar e vice e versa conforme o usuário selecionar. 
+As o valor das moedas são buscados via requisição, portanto os valores são reais. 
+Está faltando a implementação do banco de dados SQflite e a da tela histórico de conversões que será implementado mais pra frente.
 
-## Getting Started
+<strong> Tecnologias utilizadas </strong>
 
-This project is a starting point for a Flutter application.
+* Androd Studio 
+* Flutter
+* Http (rest)
+* SQFlite
 
-A few resources to get you started if this is your first Flutter project:
+<strong> Imagens da aplicação </strong>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
